@@ -1,0 +1,8 @@
+<%= form_for(@song) do |f| %>
+  <%= f.text_field :title, placeholder: "title"%><br>
+  <%= f.text_field :artist_name, placeholder: "artist" %><br>
+  <%= f.text_field :genre, placeholder: "genre" %><br>
+  Released: <%= f.check_box :released, checked_value: true, unchecked_value: false %><br>
+  <%= f.text_field :release_year, placeholder: "year released" %><br>
+  <%= f.submit%>
+<% end %>
